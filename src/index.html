@@ -14,26 +14,37 @@
 
     <section class="container-um">
         <div class="container-dois">
-            <img src="/img/Captura de Tela 2023-05-16 às 21.19 1.png" alt="Restaurante Delícias Express">
-            
-            <form>
+            <div class="container-img">
+                <img src="/img/Captura de Tela 2023-05-16 às 21.19 1.png" alt="Restaurante Delícias Express">
+            </div>
+            <form class="formulario">
                 <div class="form-group">
                     <label for="number">Valor total da conta:</label>
                     <input type="number" id="number" name="number" required>
                 </div>
                 <div class="form-group">
-                    <label for="email">Incluir da taxa de serviço:</label>
-                    <input type="email" id="email" name="email" required>
+                    <label for="search">Incluir da taxa de serviço:</label>
+                    <select name="select" id="select">
+                        <option value="1">Sim</option>
+                        <option value="2">Não</option>
+                    </select>
                 </div>
                 <div class="form-group">
                     <label for="message">Quantidade de pagantes:</label>
-                    <textarea id="message" name="message" rows="4" required></textarea>
+                    <select name="select" id="select">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
                 </div>
             </form>
 
-            <button type="submit">CALCULAR</button>
+            <div class="container-button">
+                <button type="submit">CALCULAR</button>
+            </div>
         </div>
-
     </section>
 
     <script src="index.js"></script>
