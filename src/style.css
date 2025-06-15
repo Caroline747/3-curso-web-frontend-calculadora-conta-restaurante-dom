@@ -59,7 +59,7 @@ select {
     margin-top: 20px;
 }
 
-button {
+.btn-calcular {
     width: 60%;
     padding: 10px 15px;
     background-color: #284A5E;
@@ -69,7 +69,7 @@ button {
     cursor: pointer;
 }
 
-button:hover {
+.btn-calcular:hover {
     background-color: #1f3a4d;
 }
 
@@ -78,4 +78,110 @@ button:hover {
     flex-direction: column;
     align-items: center;
     gap: 20px;
+}
+
+#desconto-modal {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.modal-content {
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  width: 320px;
+  max-width: 90%;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.modal-content p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.modal-content small {
+  font-size: 13px;
+  color: #555;
+}
+
+.modal-content button {
+  padding: 10px 25px;
+  margin: 0 10px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.modal-content .btn-sim {
+  background-color: #28a745;
+  color: white;
+}
+
+.modal-content .btn-nao {
+  background-color: #dc3545;
+  color: white;
+}
+
+.modal-content button:hover {
+  opacity: 0.85;
+}
+
+.fechar-modal {
+  background-color: transparent;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+
+}
+
+.fechar-modal button {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  color: #aaa;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.fechar-modal:hover {
+  color: #000;
+}
+
+#resumo-modal {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+#resumo-modal .modal-content h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: #333;
+}
+
+@keyframes fadeIn {
+  from { 
+    opacity: 0; transform: scale(0.95); 
+}
+  to { opacity: 1; transform: scale(1); 
+  }
 }
