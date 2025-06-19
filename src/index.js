@@ -34,13 +34,13 @@
       let desconto = 0;
 
       if (aplicarDesconto) {
-        desconto = total * 0.05;
+        desconto = total * 0.10;
         total -= desconto;
 
         alert(
           `Resumo da conta com desconto:\n\n` +
           `Valor original: R$ ${valorOriginal.toFixed(2)}\n` +
-          `Desconto (5%): R$ ${desconto.toFixed(2)}\n` +
+          `Desconto (10%): R$ ${desconto.toFixed(2)}\n` +
           `Valor final: R$ ${total.toFixed(2)}\n` +
           `Valor por pessoa: R$ ${(total / pagantes).toFixed(2)}`
         );
