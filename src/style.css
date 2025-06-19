@@ -225,6 +225,15 @@ select {
   cursor: pointer;
 }
 
+.btn-nao {
+  background-color: #f44336;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;
